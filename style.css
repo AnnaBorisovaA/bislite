@@ -1,12 +1,15 @@
 body {
 	font-family: arial;
-	margin: 0;
+	margin: 0 auto;
 	background-color: #e8ebf1;
+
+
 }
 	.Bwrappers {
 		max-width: 1000px;
 		margin: 0 auto;
 		position: relative;
+		
 	}
 
 		.Bwrappers:after {
@@ -21,55 +24,55 @@ body {
 		float: right;
 		font-size: 30px;
 	}
-		.nav li {
-			display: inline-block;
-			font-size: 13px;
-			margin-left: 10px; 
+		.nav li { 
 			font-weight: 700;
 			line-height: 20px;
+			margin-left: 10px;
+			display: inline-block; 
+			font-size: 13px;
+			border-top: 3px solid transparent;
 		}
-			.nav li a {
-				display: block;
+			ul.nav > li a {
 				color: black;
 				text-decoration: none;
-				padding: 20px 10px;
+				display: block;
+				padding: 15px 10px;
 			}
-			.nav li a:hover {
-				padding-top: 5px;
-				padding-bottom: 5px;
+			.nav >li:hover {
 				border-top: 3px solid #2aacc8;
 				color: #2aacc8;
 				background-color: white;
 			}
+
 			.nav li a:hover:after {
 				color: black;
 			}
 
 		ul.subnav {
-			display: none;
 		    position: absolute;
 		    width: 200px;
 		    top: 30px;
-		    left: inherit;
 		    font-size: 13px;
 		    font-weight: 700;
 			line-height: 20px;
 		    background-color: white;
+		    padding: 20px 0;
+			display: none;
 		   }
 
 					ul.subnav > li {
 					    display: block;
-					    border-bottom: 1px solid lightgray;
+					    
 					}
 
 					ul.subnav > li .smiley {
-					    border-radius: 1em;
+					border-radius: 1em;
 					-webkit-box-shadow: 0 0 0 .4em #2C2C2C, inset 0 0 0 .1em #2C2C2C;
 					box-shadow: 0 0 0 .4em #2C2C2C, inset 0 0 0 .1em #2C2C2C;
 					height: 2em;
-					position: relative;
 					width: 2em;
 					margin-top: 0.3em;
+					position: relative;
 					}
 					 
 					.smiley::after, .smiley::before {
@@ -93,19 +96,27 @@ body {
 					.smiley:before {
 					    border-radius: 0 1em 0 0;
 					    right: 0;
-					}
+					
 
 					}
-					ul.subnav > li > a {
+					ul.subnav > li> a {
 					    display: block;
-					    padding: 10px;
+					    margin-right: 10px;
 					    text-decoration: none;
-					    
+					    border-bottom: 1px solid lightgray;
+					    padding: 5px; 
+					    text-decoration: none;
+					    color: #000;
+					    font: 400 13px 'arial mt', sans-serif;
+					    line-height: 26px;
+					}
+					ul.subnav li:last-child a {
+						border: none;
 					}
 					ul.subnav > li > a:hover {
 					    border-top: none;
 					    color:  #2aacc8;
-					    padding: 10px;
+					    padding: 5px;
 					}
 
 						ul.nav > li:hover > ul.subnav {
@@ -126,9 +137,9 @@ body {
 		margin-top: 40px;
 		font-size: 50px;
 		line-height: 20px;
-		font-family: Lato;
 		font-weight: 900;
 		color: black;
+		font-family: 'Lato' sans-serif;
 	}
 
 span {
